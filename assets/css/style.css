@@ -1,0 +1,10 @@
+.form {
+    display: flex;
+    flex-direction: row;
+}
+.form1 {
+    margin-left: 13px;
+}
+.form2 {
+    margin-left: 10px;
+}

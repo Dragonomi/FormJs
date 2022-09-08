@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Форма Отправки</title>
+</head>
+<body>
+	<form>
+	<div class="form">
+		<div>
+			<p>Имя</p>
+			 <input id="name" type="text" alt="name" placeholder="Имя" required />
+		</div>
+	<div class="form1">
+		<div>
+			<p>E-mail</p>
+			<input id="email" type="e-mail" alt="E-mail" placeholder="E-mail"required/>
+		</div>
+	</div>
+		<div class="form2">
+             <p>Телефон</p>
+             <input type="text" placeholder="Телефон" id="number">
+        </div>
+    </div>
+</div>
+<input type="submit" style="height: auto" onclick="SendMessage()" />
+</form>
+    <script type="text/javascript">
+      function SendMessage() {
+        const inputName = document.getElementById("name");
+        const inputEmail = document.getElementById("email");
+        const inputNumber = document.getElementById("number");
+        if (inputName.value == "" || inputEmail.value == "" ||
+        	inputNumber.value == "") {
+            inputName.style.borderColor = "red";
+            inputEmail.style.borderColor = "red";
+            inputNumber.style.borderColor = "red";
+        }
+      }
+    </script>
+<script src="assets/index.js" type="text/javascript"></script>
+</body>
+</html>
